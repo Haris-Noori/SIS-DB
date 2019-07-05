@@ -1,6 +1,6 @@
 <?php
 
 
-    echo "HELLO ADMIN";
+    echo "HELLO ADMIN, this is index page";
 
 ?>
