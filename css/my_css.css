@@ -1,0 +1,34 @@
+#pl_logo
+{
+    width: 300px;
+    height: 100px;
+}
+
+#clubs
+{
+    width: 850px;
+}
+
+#img_footer
+{
+    height: 150px;
+    width: 400px;
+}
+
+#sign_up_btn
+{
+    color: #37003c;
+    background: #05f0ff;
+}
+
+#navbar
+{
+    color: white;
+    background: #37003c;
+}
+
+.nav-link
+{
+    color: white;
+    font-size: 18px;
+}
