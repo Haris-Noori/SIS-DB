@@ -5,7 +5,6 @@
 <!DOCTYPE html>
 <head>
     <title> Premier League | Home </title>
-    <!-- <link rel="import" href="main.html"> -->
 </head>
 <body>
 
@@ -13,7 +12,7 @@
 
     
     
-    <!-- -->
+    
     <?php  include "php_files/footer.php"?>
 </body>
 </html>

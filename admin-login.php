@@ -9,11 +9,12 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
-                    <h1>Admin Log In</h1>
+                <h1>Administrator</h1>
             </div>
         </div>
         <!-- form -->
-        <form action="admin_login_try.php" method="post">
+        <form action="php_files/admin/admin_login_try.php" method="post">
+
             <div class="form group-row">
                 <input placeholder="Username" type="text" name="admin_name" class="form-control col-sm-4" required>
             </div>
@@ -23,9 +24,20 @@
             </div>
             <br>
             <div class="form group-row">
-                <div class="col-sm-4"></div>
                 <input type="submit" class="form-control col-sm-4 btn" id="submit_btn">
             </div>
+            <br>
+            <div class="form group-row">
+                <?php
+                    if(isset($_GET["Message"]))
+                    {
+                        echo "<div class='col-sm-4 alert alert-dark'>";
+                        echo $_GET["Message"];
+                        echo "</div>";
+                    }
+                ?>
+            </div>
+            
         </form>
 
     </div>
