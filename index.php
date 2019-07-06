@@ -1,5 +1,5 @@
 <?php
-    include "header.php"
+    include "php_files/header.php"
 ?>
 
 <!DOCTYPE html>
@@ -9,11 +9,11 @@
 </head>
 <body>
 
-    <h1>This is home page</h1>
+    <h1>This is home, lets Start!!</h1>
 
     
     
     <!-- -->
-    <?php  include "footer.php"?>
+    <?php  include "php_files/footer.php"?>
 </body>
 </html>

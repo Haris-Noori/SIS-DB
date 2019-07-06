@@ -1,0 +1,23 @@
+.container
+{
+    margin-left: 450px;
+    margin-top: 150px;
+}
+
+h1
+{
+    text-align: center;
+}
+
+#submit_btn
+{
+    background: #37003c;
+    color: white;
+}
+
+body
+{
+    background-image: url('../images/pl_pattern.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
