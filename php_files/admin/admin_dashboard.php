@@ -1,4 +1,5 @@
 <?php include "admin_header.php"; ?>
+
 <!DOCTYPE html>
 <head>
     <title>Admin | Dashboard</title>
@@ -7,10 +8,10 @@
 
 
 
-    
+    <h2>HOME</h2>
 
 
 
-    <?php include "admin_footer.php" ?>
+    <?php include "admin_footer.php"; ?>
 </body>
 </html>

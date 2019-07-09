@@ -1,6 +1,3 @@
-<?php 
-    session_start();
-?>
 
 <!DOCTYPE html>
 <html>
@@ -55,7 +52,7 @@
 
         <div class="dropdown">
             <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Welcome, <?php echo " ".$_SESSION["user"]." " ?>
+                Welcome, Admin name <!-- watch at bottom of file -->
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#">My Profile</a>
@@ -70,24 +67,11 @@
 
 
 
-    <h3>Testing dropdown</h3>
-    <div class="btn-group">
-        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Action
-        </button>
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="admin_logout.php">Separated link</a>
-        </div>
-    </div>
 
 
 
-    <!-- DON'T CODE AFTER THIS LINE-->
-    
-   
+    <!-- DON'T CODE AFTER THIS LINE-->   
 </body>
 </html>
+
+<!--  //echo " ".$_SESSION["user"]." " 
