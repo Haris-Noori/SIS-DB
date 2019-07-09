@@ -6,6 +6,11 @@
 <body>
 
 
+
+    
+
+
+
     <?php include "admin_footer.php" ?>
 </body>
 </html>

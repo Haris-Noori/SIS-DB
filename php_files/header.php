@@ -53,6 +53,5 @@
 
 
     <!-- DON'T CODE AFTER THIS LINE-->
-    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
