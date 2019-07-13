@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="shortcut icon" type="image/png" href="../images/pl_favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/my_css.css">
 </head>
@@ -20,7 +21,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="nav justify-content-center">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Clubs</a>
