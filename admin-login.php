@@ -31,7 +31,7 @@
                 <?php
                     if(isset($_GET["Message"]))
                     {
-                        echo "<div class='col-sm-4 alert alert-dark'>";
+                        echo "<div class='col-sm-4 alert alert-danger'>";
                         echo $_GET["Message"];
                         echo "</div>";
                     }

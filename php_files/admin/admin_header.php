@@ -20,7 +20,7 @@
                     <a class="nav-link" href="admin_dashboard.php">Dashboard<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Clubs</a>
+                    <a class="nav-link" href="admin_clubs.php">Clubs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Players</a>
