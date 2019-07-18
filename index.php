@@ -81,19 +81,19 @@
 
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="images/transfer_news_1.jpg" class="d-block w-100" alt="...">
+                                <a href="https://www.chelseafc.com/en/news/2019/07/01/mateo-kovacic-joins-chelsea-on-a-permanent-deal?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src="images/transfer_news_1.jpg" class="d-block w-100" alt="..."></a>
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>MATEO KOVACIC JOINS CHELSEA ON A PERMANENT DEAL</h5>
+                                    <h5 class="transfer_head">MATEO KOVACIC JOINS CHELSEA ON A PERMANENT DEAL</h5>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="images/transfer_news_2.jpg" class="d-block w-100" alt="...">
+                                <a href="https://www.mancity.com/news/first-team/first-team-news/2019/july/jack-harrison-extends-deal-and-loaned-to-leeds-united"><img src="images/transfer_news_2.jpg" class="d-block w-100" alt="..."></a>
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>HARRISON PENS NEW CITY DEAL AND AGREES LEEDS LOAN</h5>
+                                    <h5 class="transfer_head">HARRISON PENS NEW CITY DEAL AND AGREES LEEDS LOAN</h5>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="images/transfer_news_3.jpg" class="d-block w-100" alt="...">
+                                <a href="https://www.manutd.com/en/news/detail/aaron-wan-bissaka-signs-for-manchester-united?utm_source=premier-league-website&utm_campaign=website&utm_medium=link"><img src="images/transfer_news_3.jpg" class="d-block w-100" alt="..."></a>
                                 <div class="carousel-caption d-none d-md-block">
                                     <!-- <h5>Third slide label</h5> -->
                                 </div>

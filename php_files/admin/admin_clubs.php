@@ -6,9 +6,15 @@
     <title>Admin | Clubs </title>
 
 </head>
+<body>
 
+    <h1> HELLO </h1>
+    <div class="container">
+        <div class="col-3">COL 1</div>
+        <div class="col-3">COL 2</div>
+    </div>
 
+</body>
 </html>
-
 
 <?php include "admin_footer.php" ?>
