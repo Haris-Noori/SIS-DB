@@ -10,8 +10,11 @@
 
     <h1> HELLO </h1>
     <div class="container">
-        <div class="col-3">COL 1</div>
-        <div class="col-3">COL 2</div>
+        <div class="row">
+            <div class="col-3">COL 1</div>
+            <div class="col-3">COL 2</div>
+        </div>
+        
     </div>
 
 </body>

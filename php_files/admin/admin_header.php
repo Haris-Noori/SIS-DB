@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- <link rel="shortcut icon" type="image/png" href="../../images/pl_favicon.ico"/> -->
+    <!-- <link rel="shortcut icon" type="image/png" href="../../images/pl_favicon.ico"/> --> <!-- icon -->
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../css/my_css.css">
     <link rel="stylesheet" type="text/css" href="../../css/admin_header.css">
