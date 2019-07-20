@@ -8,15 +8,17 @@
 <body>
 
 
-
-    <h2>HOME</h2>
-    <p>huhf</p>
-
+    <hr>
     <br>
+    <h1>hhhh</h1>,nsfjnnjnjwn
+    <h2>Hello </h2>
+    
 
-
+    
 
     
 </body>
 </html>
 <?php include "admin_footer.php"; ?>
+
+

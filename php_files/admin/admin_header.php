@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../css/my_css.css">
     <link rel="stylesheet" type="text/css" href="../../css/admin_header.css">
+    
     
 </head>
 
@@ -67,12 +67,8 @@
     <!-- HEADER ENDS HERE -->
 
 
-
-
-
-
     <!-- DON'T CODE AFTER THIS LINE-->   
-</body>
-</html>
+<!-- </body>
+</html> -->
 
 <!--  //echo " ".$_SESSION["user"]." " 

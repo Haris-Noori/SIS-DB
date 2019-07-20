@@ -45,7 +45,7 @@
                     <a class="nav-link" href="#">Club Stats</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Player Stats</a>
+                    <a class="nav-link" href="player_stats.php">Player Stats</a>
                 </li>
             </ul>
         </div>

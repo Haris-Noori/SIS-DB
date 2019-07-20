@@ -1,12 +1,8 @@
-<?php 
-    session_start();
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../../css/my_css.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/my_css.css"> -->
 </head>
 <body>
 
