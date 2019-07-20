@@ -1,6 +1,6 @@
 <?php include "admin_header.php"; ?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html>
 <head>
     <title>Admin | Dashboard</title>
