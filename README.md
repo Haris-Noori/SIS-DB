@@ -3,5 +3,6 @@ Sports Information System - Database Project
 
 Haris Noori
 Bilal Amjad
+Syed Ali Javed
 
 
