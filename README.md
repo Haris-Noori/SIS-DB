@@ -1,7 +1,7 @@
 # SIS-DB
 Sports Information System - Database Project
 
-Haris Noori
+Collaborator: Haris Noori
 Bilal Amjad
 collaborator: Syed Ali Javed
 
