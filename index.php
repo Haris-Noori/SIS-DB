@@ -1,5 +1,5 @@
 <?php
-    include "php_files/header.php";
+    include "php_files/index_header.php";
 ?>
 
 <!-- <!DOCTYPE html> -->
