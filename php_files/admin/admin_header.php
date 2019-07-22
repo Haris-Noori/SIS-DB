@@ -68,7 +68,7 @@
 
 
     <!-- DON'T CODE AFTER THIS LINE-->   
-<!-- </body>
-</html> -->
+</body>
+</html>
 
 <!--  //echo " ".$_SESSION["user"]." " 

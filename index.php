@@ -125,6 +125,6 @@
     
     
     
-    <?php  include "php_files/footer.php"; ?>
+    <?php  include "php_files/index_footer.php"; ?>
 </body>
 </html>
