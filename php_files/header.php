@@ -2,8 +2,8 @@
 <html>
 <head>
     <link rel="shortcut icon" type="image/png" href="../images/pl_favicon.ico"/>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/my_css.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/my_css.css">
 </head>
 
 <body>
@@ -11,7 +11,7 @@
     <!-- nav bar -->
     <!-- HEADER STARTS HERE -->
     <h1>
-        <span><img src="images/pl_logo.png" id="pl_logo"></span> <span><img src="images/clubs.PNG" id="clubs"></span>
+        <span><img src="../images/pl_logo.png" id="pl_logo"></span> <span><img src="../images/clubs.PNG" id="clubs"></span>
         <span> <button class="btn btn-dark btn-lg" id="sign_up_btn">Sign Up</button> </span>
     </h1>
 

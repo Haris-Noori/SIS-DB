@@ -2,7 +2,8 @@
     include "php_files/header.php";
 ?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
+<html>
 <head>
     <title> Premier League | Home </title>
 
@@ -16,7 +17,7 @@
 
     <div class="jumbotron" id="index-jumbotron">
         <h1 class="display-4"> <strong> <b> Premier League Season 2018/19 </b> </strong> </h1>
-        <p class="lead">Premier League Football News, Fixtures and Results</p>
+        <p class="lead"><strong>Premier League Football News, Fixtures and Results</strong></p>
         <hr class="my-4">
     </div>
 

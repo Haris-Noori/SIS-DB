@@ -1,7 +1,7 @@
 #index-jumbotron
 {
     color: #37003c;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4) ), url('../images/jumbotron.jpg'); 
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2) ), url('../images/jumbotron.jpg'); 
 }
 
 /* .pts_tbl
