@@ -1,0 +1,17 @@
+h2
+{
+    color: white;
+}
+
+hr
+{
+    width: 400px;
+    border: #17a2b8 solid;
+}
+
+body
+{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4) ), url('../images/dashboard-bg.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
