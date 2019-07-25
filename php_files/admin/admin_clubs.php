@@ -38,6 +38,7 @@
                     <th>club id</th> <th>club name</th> 
                     <th>manager id</th> <th>PL titles</th> 
                     <th>stadium id</th> <th>rank</th> 
+                    <th> Action </th>
                     </tr> </thead> ";
 
                 while($row = $res->fetch_assoc())
@@ -50,6 +51,7 @@
                         <td> ".$row['pl_titles']." </td>
                         <td> ".$row['stadium_id']." </td>
                         <td> ".$row['rank']." </td>
+                        <td> <button class='btn btn-info btn-block'>delete</button> </td>
 
                     </tr> </tbody> ";
                 }
