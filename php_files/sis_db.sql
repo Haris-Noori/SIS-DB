@@ -1,4 +1,14 @@
--- DATABASE NAME: sis-db
+----------------------------------------------------------------------
+----------------
+-- Project Name: Sports Information System
+-- Name : 16i-0267 - Ali Jved 
+-- : 16i-0480 - Bilal Amjad
+-- : 17p-6003 - M.Haris Noori
+-- Project Description : We are developing a Web based Premier League information system. Premier League is an English Football league 
+-- which consists of 20 football clubs from different cities of England. This system is free for everyone and people can get every 
+-- update and every kind of information about Premier League through this system
+----------------------------------------------------------------------
+
 DROP DATABASE IF EXISTS sis_db;
 CREATE DATABASE sis_db;
 use sis_db;

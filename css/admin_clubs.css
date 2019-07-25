@@ -1,0 +1,26 @@
+h1
+{
+    color: #37003c;
+}
+
+.btn_add
+{
+    margin-left: 300px;
+}
+
+.btn_del
+{
+    margin-right: 300px;
+}
+
+hr
+{
+    background: #37003c;
+    width: 600px;
+}
+
+.thead_clubs
+{
+    background: #17a2b8;
+    color: white;
+}
