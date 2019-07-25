@@ -7,7 +7,7 @@ use sis_db;
 -- TABLES CREATION --
 
 -- TABLE admin
-CREATE TABLE admin(
+CREATE TABLE admins(
     admin_id INT(4) PRIMARY KEY,
     username VARCHAR(20) NOT NULL,
     password VARCHAR(20) NOT NULL
@@ -180,9 +180,9 @@ SET FOREIGN_KEY_CHECKS = 0;
 
 -- INSERTION STARTS HERE --
 -- ADMIN
-INSERT INTO admin(admin_id, username, password) VALUES (1, 'haris', 'haris');
-INSERT INTO admin(admin_id, username, password) VALUES (2, 'ali', 'javed');
-INSERT INTO admin(admin_id, username, password) VALUES (3, 'bilal', 'amjad');
+INSERT INTO admins(admin_id, username, password) VALUES (1, 'haris', 'haris');
+INSERT INTO admins(admin_id, username, password) VALUES (2, 'ali', 'javed');
+INSERT INTO admins(admin_id, username, password) VALUES (3, 'bilal', 'amjad');
 
 -- CLUBS
 INSERT INTO clubs(club_id, club_name, manager_id, pl_titles, stadium_id, rank) VALUES ('cl1', 'Arsenal', 'mgr1', 3, 'std1', 5);

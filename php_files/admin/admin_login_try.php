@@ -5,7 +5,18 @@
     $user = $_POST["admin_name"];
     $pass = $_POST["admin_pass"];
 
-    $qry = "SELECT * FROM admin WHERE name='".$user."' ";
+    $qry = "SELECT * FROM admins WHERE username = '".$user."' ";
+
+    //----------------------- check if query working
+    // if($con->query($qry))
+    // {
+    //     echo "Query run success"; 
+    // }
+    // else
+    // {
+    //     echo "Query didn't run";
+    // }
+    //---------------------------------------
 
     $res = $con->query($qry);
     $msg = "";

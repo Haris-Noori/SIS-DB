@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,7 +55,7 @@
 
         <div class="dropdown">
             <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Welcome, Admin name <!-- watch at bottom of file -->
+                Welcome, <?php echo " ".$_SESSION["user"]." " ?> <!-- watch at bottom of file -->
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#">My Profile</a>
