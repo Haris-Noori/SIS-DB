@@ -199,6 +199,8 @@ INSERT INTO players(player_id, player_name, position, nationality, club_id, seas
 INSERT INTO players(player_id, player_name, position, nationality, club_id, season_id) VALUES ('pl2', 'NGolo Kante', 'MID', 'French', 'cl2', 's18');
 INSERT INTO players(player_id, player_name, position, nationality, club_id, season_id) VALUES ('pl3', 'Paul Pogba', 'MID', 'French', 'cl3', 's18');
 INSERT INTO players(player_id, player_name, position, nationality, club_id, season_id) VALUES ('pl4', 'David de Gea', 'GK', 'Spanish', 'cl3', 's18');
+INSERT INTO players(player_id, player_name, position, nationality, club_id, season_id) VALUES ('pl5', 'Petr Cech', 'GK', 'Czech', 'cl1', 's18');
+INSERT INTO players(player_id, player_name, position, nationality, club_id, season_id) VALUES ('pl6', 'Robert Green', 'GK', 'English', 'cl2', 's18');
 
 -- FIXTURES
 INSERT INTO fixtures(club_id1, club_id2, m_time, m_date, stadium_id) VALUES ('cl1', 'cl2', '00:00', '2018-08-17', 'st1');
@@ -227,6 +229,8 @@ INSERT INTO player_stats(player_id, club_id, goals_scored, assists) VALUES ('pl3
 
 -- CLEAN SHEETS
 INSERT INTO clean_sheets(player_id, club_id, c_sheets) VALUES ('pl4', 'cl3', 100);
+INSERT INTO clean_sheets(player_id, club_id, c_sheets) VALUES ('pl5', 'cl1', 1);
+INSERT INTO clean_sheets(player_id, club_id, c_sheets) VALUES ('pl6', 'cl2', 0);
 
 -- POINTS TABLE
 INSERT INTO points_table(club_id, season_id, played, won, drawn, lost, gf, ga, gd, points) VALUES ('cl1', 's18', 38, 21, 7, 10, 73, 51, 22, 70); 
