@@ -15,7 +15,7 @@
 </head>
 <body>
 
-    <center><h1> Add new club</h1></center>
+    <center><h2>After adding new club, you must update the stadium and manager table</h2></center>
     <hr>
 
     <center><div class="container">
@@ -81,6 +81,34 @@
     $manager_id = $_POST["manager_id"];
     $pl_titles = $_POST["pl_titles"];
     $stadium_id = $_POST["stadium_id"];
+    $rank = $_POST["rank"];
+
+    $qry = " SET FOREIGN_KEY_CHECKS = 0 ";
+    $qry1 = " INSERT INTO clubs VALUES ('".$club_id."' , '".$club_name."' , '".$manager_id."', '".$pl_titles."' , '".$stadium_id."' , '".$rank."') ";
+    $qry2 = " SET FOREIGN_KEY_CHECKS = 1 ";
+
+    if($con->query($qry))
+    {
+        //echo "Query is ok";
+        if($con->query($qry1)) //if data is inserted
+        {
+            $msg = "Data inserted";
+            if($con->query($qry2))
+            {   
+                echo "Foreign key set";
+                header("Location:add_manager.php?");
+            }
+        }
+        else
+        {
+            echo "data not inserted";
+        }
+        
+    }
+    else
+    {
+        echo "not ok";
+    }
 
 ?>
 
