@@ -1,6 +1,7 @@
 <?php 
     include "admin_header.php";
     include "../connect.php";
+    session_start();
 ?>
 
 <!-- <!DOCTYPE html> -->
@@ -30,7 +31,7 @@
             $result = "";
 
             if($res->num_rows > 0)
-            {   echo "Query is OK";
+            {   
                 $result .= " <div class = 'container'> ";
                 $result .= " <table class='table table-bordered'> ";
 
@@ -51,7 +52,7 @@
                         <td> ".$row['pl_titles']." </td>
                         <td> ".$row['stadium_id']." </td>
                         <td> ".$row['rank']." </td>
-                        <td> <button class='btn btn-info btn-block'>delete</button> </td>
+                        <td> <a href='add_club.php'><button class='btn btn-info btn-block'>delete</button></a> </td>
 
                     </tr> </tbody> ";
                 }
