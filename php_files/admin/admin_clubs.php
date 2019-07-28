@@ -16,7 +16,7 @@
     <center><h1> Add New, Update AND Delete clubs</h1></center>
     <center><div class="container">
         <div class="row">
-            <div class="col-6"><button class="btn btn-info btn-lg btn_add">Add New</button></div>
+            <div class="col-6"><a href="add_club.php"><button class="btn btn-info btn-lg btn_add">Add New</button></a></div>
             <div class="col-6"><button class="btn btn-info btn-lg btn_del">Delete club</button></div>
         </div>
     </div></center>
@@ -52,7 +52,7 @@
                         <td> ".$row['pl_titles']." </td>
                         <td> ".$row['stadium_id']." </td>
                         <td> ".$row['rank']." </td>
-                        <td> <a href='add_club.php'><button class='btn btn-info btn-block'>delete</button></a> </td>
+                        <td> <a href='edit_club.php?edit=".$row['club_id']."'><button class='btn btn-info btn-block'>edit</button></a> </td>
 
                     </tr> </tbody> ";
                 }
