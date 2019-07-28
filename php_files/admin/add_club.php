@@ -47,7 +47,7 @@
             <br>
             <!-- submit button -->
             <div class="form group-row">
-                <input type="submit" class="form-control col-sm-4 btn btn-info">
+                <button type="submit" class="col-sm-4 btn btn-info btn-block"> Add</button>
             </div>
             <br>
             <div class="form group-row">

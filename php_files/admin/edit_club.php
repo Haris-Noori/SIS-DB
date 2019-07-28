@@ -16,13 +16,13 @@
         { 
             while($row = $res->fetch_assoc() )
             {
+                $club_id   = $row["club_id"];
                 $club_name = $row["club_name"];
-                echo "<script>alert('hello')</script>";
+                $pl_titles = $row["pl_titles"];
+                $rank      = $row["rank"];
             }    
         }
-        // $res = $con->query($qry);
-        // $row = $res->fetch_assoc();
-        // $club_name = $row['club_name'];
+        
     }
 
 ?>
@@ -39,11 +39,15 @@
 <body>
     <br>
 
-    <center><div class="container">
+    <center><h1>Change and update the informtion</h1></center>
+    <hr width="500px">
+
+    <center>
+    <div class="container">
         <form action="" method="post">
 
             <div class="form group-row">
-                <input placeholder="club_id" type="text" name="club_id" class="form-control col-sm-4" required>
+                <input placeholder="club_id" type="text" name="club_id" value="<?php echo "$club_id" ; ?>" class="form-control col-sm-4" required>
             </div>
             <br>
             <div class="form group-row">
@@ -51,12 +55,19 @@
             </div>
             <br>
             <div class="form group-row">
-                <input placeholder="pl_titles" type="number" name="pl_titles" class="form-control col-sm-4" required>
+                <input placeholder="pl_titles" type="number" name="pl_titles" value="<?php echo "$pl_titles" ; ?>" class="form-control col-sm-4" required>
+            </div>
+            <br>
+            <div class="form group-row">
+                <input placeholder="pl_titles" type="number" name="pl_titles" value="<?php echo "$rank" ; ?>" class="form-control col-sm-4" required>
             </div>
             <br>
             
             <!-- submit button -->
-           
+            <div class="form group-row">
+                <button type="submit" class="btn btn-info col-sm-4">Update</button> 
+            </div>
+            <br>
             
 
         </form>
