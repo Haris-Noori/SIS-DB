@@ -47,15 +47,15 @@
         <form action="" method="post">
 
             <div class="form group-row">
-                <input placeholder="club_name" type="text" name="club_new_name" value="<?php echo "$club_name" ; ?>" class="form-control col-sm-4" required>
+                <span>Club Name</span><input placeholder="club_name" type="text" name="club_new_name" value="<?php echo "$club_name" ; ?>" class="form-control col-sm-4" required>
             </div>
             <br>
             <div class="form group-row">
-                <input placeholder="pl_titles" type="number" name="new_pl_titles" value="<?php echo "$pl_titles" ; ?>" class="form-control col-sm-4" required>
+            <span>PL Titles</span><input placeholder="pl_titles" type="number" name="new_pl_titles" value="<?php echo "$pl_titles" ; ?>" class="form-control col-sm-4" required>
             </div>
             <br>
             <div class="form group-row">
-                <input placeholder="rank" type="number" name="new_rank" value="<?php echo "$rank" ; ?>" class="form-control col-sm-4" required>
+            <span>Rank in PL</span><input placeholder="rank" type="number" name="new_rank" value="<?php echo "$rank" ; ?>" class="form-control col-sm-4" required>
             </div>
             <br>
             
