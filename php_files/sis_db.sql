@@ -169,14 +169,14 @@ ALTER TABLE players
 ADD CONSTRAINT FK_season_id_players FOREIGN KEY (season_id) REFERENCES seasons(season_id);
 
 ALTER TABLE player_stats
-ADD CONSTRAINT FK_club_id_player_stats FOREIGN KEY (club_id) REFERENCES clubs(club_id);
+ADD CONSTRAINT FK_club_id_player_stats FOREIGN KEY (club_id) REFERENCES clubs(club_id) ON DELETE CASCADE;
 ALTER TABLE player_stats
-ADD CONSTRAINT FK_player_id_player_stats FOREIGN KEY (player_id) REFERENCES players(player_id);
+ADD CONSTRAINT FK_player_id_player_stats FOREIGN KEY (player_id) REFERENCES players(player_id) ON DELETE CASCADE;
 
 ALTER TABLE clean_sheets
 ADD CONSTRAINT FK_club_id_clean_sheets FOREIGN KEY (club_id) REFERENCES clubs(club_id);
 ALTER TABLE clean_sheets
-ADD CONSTRAINT FK_player_id_clean_sheets FOREIGN KEY (player_id) REFERENCES players(player_id);
+ADD CONSTRAINT FK_player_id_clean_sheets FOREIGN KEY (player_id) REFERENCES players(player_id) ON DELETE CASCADE;
 
 ALTER TABLE points_table
 ADD CONSTRAINT FK_club_id_points_table FOREIGN KEY (club_id) REFERENCES clubs(club_id);
