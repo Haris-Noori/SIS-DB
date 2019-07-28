@@ -17,7 +17,7 @@
     <center><div class="container">
         <div class="row">
             <div class="col-6"><a href="add_club.php"><button class="btn btn-info btn-lg btn_add">Add New</button></a></div>
-            <div class="col-6"><button class="btn btn-info btn-lg btn_del">Delete club</button></div>
+            <div class="col-6"><a href="del_club.php"><button class="btn btn-info btn-lg btn_del">Delete club</button></a></div>
         </div>
     </div></center>
 
