@@ -47,19 +47,15 @@
         <form action="" method="post">
 
             <div class="form group-row">
-                <input placeholder="club_id" type="text" name="club_id" value="<?php echo "$club_id" ; ?>" class="form-control col-sm-4" required>
-            </div>
-            <br>
-            <div class="form group-row">
                 <input placeholder="club_name" type="text" name="club_new_name" value="<?php echo "$club_name" ; ?>" class="form-control col-sm-4" required>
             </div>
             <br>
             <div class="form group-row">
-                <input placeholder="pl_titles" type="number" name="pl_titles" value="<?php echo "$pl_titles" ; ?>" class="form-control col-sm-4" required>
+                <input placeholder="pl_titles" type="number" name="new_pl_titles" value="<?php echo "$pl_titles" ; ?>" class="form-control col-sm-4" required>
             </div>
             <br>
             <div class="form group-row">
-                <input placeholder="pl_titles" type="number" name="pl_titles" value="<?php echo "$rank" ; ?>" class="form-control col-sm-4" required>
+                <input placeholder="rank" type="number" name="new_rank" value="<?php echo "$rank" ; ?>" class="form-control col-sm-4" required>
             </div>
             <br>
             
@@ -82,6 +78,29 @@
 </html>
 
 <?php include "admin_footer.php"; ?>
+
+<?php
+
+    $club_new_name = $_POST["club_new_name"];
+    $new_pl_titles = $_POST["new_pl_titles"];
+    $new_rank      = $_POST["new_rank"];
+
+    $qry2 = " UPDATE clubs SET club_name='".$club_new_name."', pl_titles='".$new_pl_titles."', rank='".$new_rank."' WHERE club_id='".$club_id."'  ";
+
+    if($con->query($qry2))
+    {
+        echo "<script>alert('Table updated')</script>";
+        header("Location:admin_clubs.php");
+        
+    }
+    else
+    {
+        echo "<script>alert('Not Updated')</script>";
+    }
+
+
+
+?>
 
 
 
