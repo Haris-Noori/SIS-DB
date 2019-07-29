@@ -31,7 +31,7 @@
                     <a class="nav-link" href="admin_managers.php">Managers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Stadiums</a>
+                    <a class="nav-link" href="admin_stadiums.php">Stadiums</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Fixtures</a>
