@@ -13,7 +13,7 @@
 </head>
 <body>
 
-    <center><h1>Update table points, and stats asap!!</h1></center>
+    <center><h1>Update stats of teams, after the season ends</h1></center>
 
     <hr>
 
@@ -39,7 +39,7 @@
                 $season_id = "s18";
             }
 
-            $qry = " SELECT * FROM points_table WHERE season_id='".$season_id."' ORDER BY points DESC ";
+            $qry = " SELECT * FROM team_stats WHERE season_id='".$season_id."' ORDER BY wins DESC ";
             $res = $con->query($qry);
             $result = "";
 

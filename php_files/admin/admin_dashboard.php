@@ -33,7 +33,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Update Points Table</h5>
                             <p class="card-text">Remember, to update table, after each match of league</p>
-                            <a href="#" class="btn btn-info">Go to points table</a>
+                            <a href="admin_points.php" class="btn btn-info">Go to points table</a>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Update Player Stats</h5>
                             <p class="card-text">Fans are keen to know their favourite player ranking</p>
-                            <a href="#" class="btn btn-primary">Go to player stats</a>
+                            <a href="admin_player_stats.php" class="btn btn-primary">Go to player stats</a>
                         </div>
                     </div>
                 </div>
