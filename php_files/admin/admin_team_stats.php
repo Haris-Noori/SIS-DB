@@ -17,29 +17,13 @@
 
     <hr>
 
-    <center>
-    <div class="container">
-        <form action="" method="post">
-        <div class="row">
-            <div class="col-6"><button type="submit" name="s17" class="btn btn-info s_17">Season 2017/18</button></div>
-            <div class="col-6"><button type="submit" name="s18" class="btn btn-info s_18">Season 2018/19</button></div>
-        </div>
-        </form> </center>
-    </div>
     
     <br>
     <center>
     <div class="container">
         <?php
-            if (isset($_POST['s17'])) {
-                $season_id = "s17";
-            }
-            else
-            {
-                $season_id = "s18";
-            }
 
-            $qry = " SELECT * FROM team_stats WHERE season_id='".$season_id."' ORDER BY wins DESC ";
+            $qry = " SELECT * FROM team_stats ORDER BY wins DESC ";
             $res = $con->query($qry);
             $result = "";
 
@@ -50,14 +34,13 @@
 
                 $result .= " <thead class='thead_clubs'> <tr> 
                     <th>club_id</th> 
-                    <th>played</th> 
-                    <th>won</th> 
-                    <th>drawn</th> 
-                    <th>lost</th>
-                    <th>gf</th>
-                    <th>ga</th>
-                    <th>gd</th>
-                    <th>points</th> 
+                    <th>wins</th> 
+                    <th>losses</th> 
+                    <th>goals</th> 
+                    <th>yellow_cards</th>
+                    <th>red_cards</th>
+                    <th>goals_conceded</th>
+                    <th>clean_sheets</th> 
                     <th> Action </th>
                     </tr> </thead> ";
 
@@ -66,15 +49,14 @@
                     $result .= " <tbody> <tr>
                     
                         <td> ".$row['club_id']." </td>
-                        <td> ".$row['played']." </td>
-                        <td> ".$row['won']." </td>
-                        <td> ".$row['drawn']." </td>
-                        <td> ".$row['lost']." </td>
-                        <td> ".$row['gf']." </td>
-                        <td> ".$row['ga']." </td>
-                        <td> ".$row['gd']." </td>
-                        <td> ".$row['points']." </td>
-                        <td> <a href='edit_points.php?edit=".$row['club_id']."'><button class='btn btn-info btn-block'>edit</button></a> </td>
+                        <td> ".$row['wins']." </td>
+                        <td> ".$row['losses']." </td>
+                        <td> ".$row['goals']." </td>
+                        <td> ".$row['yellow_cards']." </td>
+                        <td> ".$row['red_cards']." </td>
+                        <td> ".$row['goals_conceded']." </td>
+                        <td> ".$row['clean_sheets']." </td>
+                        <td> <a href='edit_team_stats.php?edit=".$row['club_id']."'><button class='btn btn-info btn-block'>edit</button></a> </td>
 
                     </tr> </tbody> ";
                 }
