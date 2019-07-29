@@ -7,7 +7,7 @@
 
 <html>
 <head>
-    <title>Admin | Clubs </title>
+    <title>Admin | Players </title>
     <!-- <link rel="stylesheet" type="text/css" href="../css/add_club.css"> -->
     <link rel="stylesheet" type="text/css" href="../../css/add_club.css">
     
