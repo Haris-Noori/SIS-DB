@@ -144,19 +144,19 @@ CREATE TABLE points_table(
 -- ALTER TABLES FOR FOREIGN KEYS
 --
 ALTER TABLE phone
-ADD CONSTRAINT FK_stadium_id_phone FOREIGN KEY (stadium_id) REFERENCES stadiums(stadium_id);
+ADD CONSTRAINT FK_stadium_id_phone FOREIGN KEY (stadium_id) REFERENCES stadiums(stadium_id) ON DELETE SET NULL;
 
 ALTER TABLE clubs
 ADD CONSTRAINT FK_manager_id_clubs FOREIGN KEY (manager_id) REFERENCES managers(manager_id);
 ALTER TABLE clubs
-ADD CONSTRAINT FK_stadium_id_clubs FOREIGN KEY (stadium_id) REFERENCES stadiums(stadium_id);
+ADD CONSTRAINT FK_stadium_id_clubs FOREIGN KEY (stadium_id) REFERENCES stadiums(stadium_id) ON DELETE SET NULL;
 
 ALTER TABLE fixtures
 ADD CONSTRAINT FK_club_id1_fix FOREIGN KEY (club_id1) REFERENCES clubs(club_id);
 ALTER TABLE fixtures
 ADD CONSTRAINT FK_club_id2_fix FOREIGN KEY (club_id2) REFERENCES clubs(club_id);
 ALTER TABLE fixtures
-ADD CONSTRAINT FK_stadium_id_fix FOREIGN KEY (stadium_id) REFERENCES stadiums(stadium_id);
+ADD CONSTRAINT FK_stadium_id_fix FOREIGN KEY (stadium_id) REFERENCES stadiums(stadium_id) ON DELETE SET NULL;
 
 ALTER TABLE managers
 ADD CONSTRAINT FK_club_id_managers FOREIGN KEY (club_id) REFERENCES clubs(club_id);
@@ -190,7 +190,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 
 -- INSERTION STARTS HERE --
 -- ADMIN
-INSERT INTO admins(admin_id, username, password) VALUES (1, 'haris', 'haris');
+INSERT INTO admins(admin_id, username, password) VALUES (1, 'Haris', 'haris');
 INSERT INTO admins(admin_id, username, password) VALUES (2, 'ali', 'javed');
 INSERT INTO admins(admin_id, username, password) VALUES (3, 'bilal', 'amjad');
 

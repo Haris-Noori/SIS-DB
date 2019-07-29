@@ -17,7 +17,7 @@
     <center><div class="container">
         <div class="row">
             <div class="col-6"><a href="add_stadium.php"><button class="btn btn-info btn-lg btn_add">Add New</button></a></div>
-            <div class="col-6"><a href="del_del.php"><button class="btn btn-info btn-lg btn_del">Delete Stadium</button></a></div>
+            <div class="col-6"><a href="del_stadium.php"><button class="btn btn-info btn-lg btn_del">Delete Stadium</button></a></div>
         </div>
     </div></center>
 

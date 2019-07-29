@@ -69,7 +69,7 @@
     $capacity     = $_POST["capacity"];
     $location     = $_POST["location"];
     $built        = $_POST["built"];
-    $pitch_size    = $_POST["pitch_size"];
+    $pitch_size   = $_POST["pitch_size"];
 
     $qry = " SET FOREIGN_KEY_CHECKS = 0 ";
     $qry1 = " INSERT INTO stadiums(stadium_id, stadium_name, capacity, location, built, pitch_size) VALUES ('".$stadium_id."' , '".$stadium_name."' , '".$capacity."', '".$location."' , '".$built."', '".$pitch_size."') ";
