@@ -34,7 +34,7 @@
                     <a class="nav-link" href="admin_stadiums.php">Stadiums</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Fixtures</a>
+                    <a class="nav-link" href="admin_fixtures.php">Fixtures</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Points Table</a>

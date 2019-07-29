@@ -23,7 +23,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Manage fixtures</h5>
                             <p class="card-text">Add, change and update date or time of matches</p>
-                            <a href="#" class="btn btn-info">Go to fixtures</a>
+                            <a href="admin_fixtures.php" class="btn btn-info">Go to fixtures</a>
                         </div>
                     </div>
                 </div>

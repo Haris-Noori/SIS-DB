@@ -43,9 +43,10 @@ CREATE TABLE clubs(
 
 -- TABLE fixtures
 CREATE TABLE fixtures(
+    m_id VARCHAR(4) PRIMARY KEY,
     club_id1 VARCHAR(4),
     club_id2 VARCHAR(4),
-    m_time VARCHAR(4),
+    m_time VARCHAR(5),
     m_date DATE,
     stadium_id VARCHAR(4)
 
@@ -213,9 +214,9 @@ INSERT INTO players(player_id, player_name, position, nationality, club_id, seas
 INSERT INTO players(player_id, player_name, position, nationality, club_id, season_id) VALUES ('pl6', 'Robert Green', 'GK', 'English', 'cl2', 's18');
 
 -- FIXTURES
-INSERT INTO fixtures(club_id1, club_id2, m_time, m_date, stadium_id) VALUES ('cl1', 'cl2', '00:00', '2018-08-17', 'st1');
-INSERT INTO fixtures(club_id1, club_id2, m_time, m_date, stadium_id) VALUES ('cl2', 'cl3', '16:30', '2018-08-17', 'st2');
-INSERT INTO fixtures(club_id1, club_id2, m_time, m_date, stadium_id) VALUES ('cl3', 'cl1', '20:30', '2018-08-20', 'st3');
+INSERT INTO fixtures(m_id, club_id1, club_id2, m_time, m_date, stadium_id) VALUES ('m1', 'cl1', 'cl2', '00:00', '2018-08-17', 'st1');
+INSERT INTO fixtures(m_id, club_id1, club_id2, m_time, m_date, stadium_id) VALUES ('m2', 'cl2', 'cl3', '16:30', '2018-08-17', 'st2');
+INSERT INTO fixtures(m_id, club_id1, club_id2, m_time, m_date, stadium_id) VALUES ('m3', 'cl3', 'cl1', '20:30', '2018-08-20', 'st3');
 
 -- STADIUMS
 INSERT INTO stadiums(stadium_id, stadium_name, capacity, location, built, pitch_size) VALUES ('st1', 'Emirates Stadium', 60260, '75 Drayton Park, London', 2006, '105m x 68m');
