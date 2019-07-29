@@ -5,7 +5,7 @@
     $pass = "";
     $dbname = "sis_db";
 
-    $con = new MySQLi($server, $user, $pass, $dbname);
+	$con = new MySQLi($server, $user, $pass, $dbname);
 
 
     // if ($con->connect_error) //if database failed to connect

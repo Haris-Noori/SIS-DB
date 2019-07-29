@@ -28,7 +28,7 @@
                     <a class="nav-link" href="admin_players.php">Players</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Managers</a>
+                    <a class="nav-link" href="admin_managers.php">Managers</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Stadiums</a>
