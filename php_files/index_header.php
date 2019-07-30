@@ -12,7 +12,7 @@
     <!-- HEADER STARTS HERE -->
     <h1>
         <span><img src="images/pl_logo.png" id="pl_logo"></span> <span><img src="images/clubs.PNG" id="clubs"></span>
-        <span> <button class="btn btn-dark btn-lg" id="sign_up_btn">Sign Up</button> </span>
+        <span> <a href="php_files/sign_up.php"><button class="btn btn-dark btn-lg" id="sign_up_btn">Sign Up</button></a> </span>
     </h1>
 
 

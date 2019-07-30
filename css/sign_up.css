@@ -1,0 +1,29 @@
+body
+{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4) ), url('../images/pl_pattern.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1
+{
+    color: white;
+}
+
+hr
+{
+    background: #17a2b8;
+    width: 500px;
+    border: 2px solid;
+}
+
+.my_select
+{
+    width: 370px;
+    height: 40px;
+
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
