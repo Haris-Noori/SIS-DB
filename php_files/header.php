@@ -24,25 +24,25 @@
                     <a class="nav-link" href="../index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Clubs</a>
+                    <a class="nav-link" href="clubs.php">Clubs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Players</a>
+                    <a class="nav-link" href="players.php">Players</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Managers</a>
+                    <a class="nav-link" href="managers.php">Managers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Stadiums</a>
+                    <a class="nav-link" href="stadiums.php">Stadiums</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Fixtures</a>
+                    <a class="nav-link" href="fixtures.php">Fixtures</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Points Table</a>
+                    <a class="nav-link" href="points_table.php">Points Table</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Club Stats</a>
+                    <a class="nav-link" href="team_stats.php">Team Stats</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="player_stats.php">Player Stats</a>

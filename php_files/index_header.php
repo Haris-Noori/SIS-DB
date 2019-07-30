@@ -42,7 +42,7 @@
                     <a class="nav-link" href="php_files/points_table.php">Points Table</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="php_files/club_stats.php">Club Stats</a>
+                    <a class="nav-link" href="php_files/team_stats.php">Club Stats</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="php_files/player_stats.php">Player Stats</a>
