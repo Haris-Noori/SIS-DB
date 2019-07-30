@@ -13,7 +13,6 @@ DROP DATABASE IF EXISTS sis_db;
 CREATE DATABASE sis_db;
 use sis_db;
 
-
 -- TABLES CREATION --
 
 -- TABLE admin
@@ -43,9 +42,10 @@ CREATE TABLE clubs(
 
 -- TABLE fixtures
 CREATE TABLE fixtures(
+    m_id VARCHAR(4) PRIMARY KEY,
     club_id1 VARCHAR(4),
     club_id2 VARCHAR(4),
-    m_time VARCHAR(4),
+    m_time VARCHAR(5),
     m_date DATE,
     stadium_id VARCHAR(4)
 
@@ -122,7 +122,7 @@ CREATE TABLE clean_sheets(
 -- TABLE seasons
 CREATE TABLE seasons(
     season_id VARCHAR(4) PRIMARY KEY,
-    season_name VARCHAR(6) not NULL
+    season_name VARCHAR(6) NOT NULL
 );
 
 -- TABLE points_table
@@ -144,19 +144,19 @@ CREATE TABLE points_table(
 -- ALTER TABLES FOR FOREIGN KEYS
 --
 ALTER TABLE phone
-ADD CONSTRAINT FK_stadium_id_phone FOREIGN KEY (stadium_id) REFERENCES stadiums(stadium_id);
+ADD CONSTRAINT FK_stadium_id_phone FOREIGN KEY (stadium_id) REFERENCES stadiums(stadium_id) ON DELETE SET NULL;
 
 ALTER TABLE clubs
 ADD CONSTRAINT FK_manager_id_clubs FOREIGN KEY (manager_id) REFERENCES managers(manager_id);
 ALTER TABLE clubs
-ADD CONSTRAINT FK_stadium_id_clubs FOREIGN KEY (stadium_id) REFERENCES stadiums(stadium_id);
+ADD CONSTRAINT FK_stadium_id_clubs FOREIGN KEY (stadium_id) REFERENCES stadiums(stadium_id) ON DELETE SET NULL;
 
 ALTER TABLE fixtures
 ADD CONSTRAINT FK_club_id1_fix FOREIGN KEY (club_id1) REFERENCES clubs(club_id);
 ALTER TABLE fixtures
 ADD CONSTRAINT FK_club_id2_fix FOREIGN KEY (club_id2) REFERENCES clubs(club_id);
 ALTER TABLE fixtures
-ADD CONSTRAINT FK_stadium_id_fix FOREIGN KEY (stadium_id) REFERENCES stadiums(stadium_id);
+ADD CONSTRAINT FK_stadium_id_fix FOREIGN KEY (stadium_id) REFERENCES stadiums(stadium_id) ON DELETE SET NULL;
 
 ALTER TABLE managers
 ADD CONSTRAINT FK_club_id_managers FOREIGN KEY (club_id) REFERENCES clubs(club_id);
@@ -169,14 +169,14 @@ ALTER TABLE players
 ADD CONSTRAINT FK_season_id_players FOREIGN KEY (season_id) REFERENCES seasons(season_id);
 
 ALTER TABLE player_stats
-ADD CONSTRAINT FK_club_id_player_stats FOREIGN KEY (club_id) REFERENCES clubs(club_id);
+ADD CONSTRAINT FK_club_id_player_stats FOREIGN KEY (club_id) REFERENCES clubs(club_id) ON DELETE CASCADE;
 ALTER TABLE player_stats
-ADD CONSTRAINT FK_player_id_player_stats FOREIGN KEY (player_id) REFERENCES players(player_id);
+ADD CONSTRAINT FK_player_id_player_stats FOREIGN KEY (player_id) REFERENCES players(player_id) ON DELETE CASCADE;
 
 ALTER TABLE clean_sheets
 ADD CONSTRAINT FK_club_id_clean_sheets FOREIGN KEY (club_id) REFERENCES clubs(club_id);
 ALTER TABLE clean_sheets
-ADD CONSTRAINT FK_player_id_clean_sheets FOREIGN KEY (player_id) REFERENCES players(player_id);
+ADD CONSTRAINT FK_player_id_clean_sheets FOREIGN KEY (player_id) REFERENCES players(player_id) ON DELETE CASCADE;
 
 ALTER TABLE points_table
 ADD CONSTRAINT FK_club_id_points_table FOREIGN KEY (club_id) REFERENCES clubs(club_id);
@@ -190,7 +190,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 
 -- INSERTION STARTS HERE --
 -- ADMIN
-INSERT INTO admins(admin_id, username, password) VALUES (1, 'haris', 'haris');
+INSERT INTO admins(admin_id, username, password) VALUES (1, 'Haris', 'haris');
 INSERT INTO admins(admin_id, username, password) VALUES (2, 'ali', 'javed');
 INSERT INTO admins(admin_id, username, password) VALUES (3, 'bilal', 'amjad');
 
@@ -213,14 +213,14 @@ INSERT INTO players(player_id, player_name, position, nationality, club_id, seas
 INSERT INTO players(player_id, player_name, position, nationality, club_id, season_id) VALUES ('pl6', 'Robert Green', 'GK', 'English', 'cl2', 's18');
 
 -- FIXTURES
-INSERT INTO fixtures(club_id1, club_id2, m_time, m_date, stadium_id) VALUES ('cl1', 'cl2', '00:00', '2018-08-17', 'st1');
-INSERT INTO fixtures(club_id1, club_id2, m_time, m_date, stadium_id) VALUES ('cl2', 'cl3', '16:30', '2018-08-17', 'st2');
-INSERT INTO fixtures(club_id1, club_id2, m_time, m_date, stadium_id) VALUES ('cl3', 'cl1', '20:30', '2018-08-20', 'st3');
+INSERT INTO fixtures(m_id, club_id1, club_id2, m_time, m_date, stadium_id) VALUES ('m1', 'cl1', 'cl2', '00:00', '2018-08-17', 'st1');
+INSERT INTO fixtures(m_id, club_id1, club_id2, m_time, m_date, stadium_id) VALUES ('m2', 'cl2', 'cl3', '16:30', '2018-08-17', 'st2');
+INSERT INTO fixtures(m_id, club_id1, club_id2, m_time, m_date, stadium_id) VALUES ('m3', 'cl3', 'cl1', '20:30', '2018-08-20', 'st3');
 
 -- STADIUMS
-INSERT INTO stadiums(stadium_id, stadium_name, capacity, location, built, pitch_size) VALUES ('std1', 'Emirates Stadium', 60260, '75 Drayton Park, London', 2006, '105m x 68m');
-INSERT INTO stadiums(stadium_id, stadium_name, capacity, location, built, pitch_size) VALUES ('std2', 'Stamford Bridge', 40853, 'Fulham Road, London', 1877, '103m x 67.5m');
-INSERT INTO stadiums(stadium_id, stadium_name, capacity, location, built, pitch_size) VALUES ('std3', 'Old Trafford', 75000, 'Old Trafford, Manchester', 1909, '105m x 68m');
+INSERT INTO stadiums(stadium_id, stadium_name, capacity, location, built, pitch_size) VALUES ('st1', 'Emirates Stadium', 60260, '75 Drayton Park, London', 2006, '105m x 68m');
+INSERT INTO stadiums(stadium_id, stadium_name, capacity, location, built, pitch_size) VALUES ('st2', 'Stamford Bridge', 40853, 'Fulham Road, London', 1877, '103m x 67.5m');
+INSERT INTO stadiums(stadium_id, stadium_name, capacity, location, built, pitch_size) VALUES ('st3', 'Old Trafford', 75000, 'Old Trafford, Manchester', 1909, '105m x 68m');
 
 -- PHONE
 INSERT INTO phone(phone_id, phone_number, stadium_id) VALUES (101, 02076195003, 'st1');
