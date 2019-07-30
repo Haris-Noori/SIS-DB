@@ -43,7 +43,7 @@
                     <a class="nav-link" href="admin_team_stats.php">Team Stats</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Player Stats</a>
+                    <a class="nav-link" href="admin_player_stats.php">Player Stats</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Users</a>

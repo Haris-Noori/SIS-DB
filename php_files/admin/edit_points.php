@@ -35,7 +35,7 @@
 
 <html>
 <head>
-    <title>Admin | Players </title>
+    <title>Admin | Points Table </title>
     <!-- <link rel="stylesheet" type="text/css" href="../css/add_club.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="../../css/add_club.css"> -->
     

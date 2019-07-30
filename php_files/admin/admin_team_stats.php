@@ -7,7 +7,7 @@
 <!-- <!DOCTYPE html> -->
 <html>
 <head>
-    <title>Admin | Points Table </title>
+    <title>Admin | Team Stats </title>
     <link rel="stylesheet" type="text/css" href="../../css/admin_points.css">
 
 </head>

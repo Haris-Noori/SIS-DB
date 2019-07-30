@@ -34,7 +34,7 @@
 
 <html>
 <head>
-    <title>Admin | Players </title>
+    <title>Admin | Team Stats </title>
     <!-- <link rel="stylesheet" type="text/css" href="../css/add_club.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="../../css/add_club.css"> -->
     
