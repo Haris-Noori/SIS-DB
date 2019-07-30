@@ -123,7 +123,7 @@ CREATE TABLE clean_sheets(
 -- TABLE seasons
 CREATE TABLE seasons(
     season_id VARCHAR(4) PRIMARY KEY,
-    season_name VARCHAR(6) not NULL
+    season_name VARCHAR(8) NOT NULL
 );
 
 -- TABLE points_table
@@ -145,7 +145,7 @@ CREATE TABLE points_table(
 -- ALTER TABLES FOR FOREIGN KEYS
 --
 ALTER TABLE phone
-ADD CONSTRAINT FK_stadium_id_phone FOREIGN KEY (stadium_id) REFERENCES stadiums(stadium_id) ON DELETE SET NULL;
+ADD CONSTRAINT FK_stadium_id_phone FOREIGN KEY (stadium_id) REFERENCES stadiums(stadium_id) ON DELETE CASCADE;
 
 ALTER TABLE clubs
 ADD CONSTRAINT FK_manager_id_clubs FOREIGN KEY (manager_id) REFERENCES managers(manager_id);
@@ -195,10 +195,13 @@ INSERT INTO admins(admin_id, username, password) VALUES (1, 'Haris', 'haris');
 INSERT INTO admins(admin_id, username, password) VALUES (2, 'ali', 'javed');
 INSERT INTO admins(admin_id, username, password) VALUES (3, 'bilal', 'amjad');
 
+-- ADMIN
+INSERT INTO seasons(season_id, season_name) VALUES ('s18', '2018/19');
+
 -- CLUBS
-INSERT INTO clubs(club_id, club_name, manager_id, pl_titles, stadium_id, rank) VALUES ('cl1', 'Arsenal', 'mgr1', 3, 'std1', 5);
-INSERT INTO clubs(club_id, club_name, manager_id, pl_titles, stadium_id, rank) VALUES ('cl2', 'Chelsea', 'mgr2', 5, 'std2', 3);
-INSERT INTO clubs(club_id, club_name, manager_id, pl_titles, stadium_id, rank) VALUES ('cl3', 'Manchester United', 'mgr3', 13, 'std3', 6);
+INSERT INTO clubs(club_id, club_name, manager_id, pl_titles, stadium_id, rank) VALUES ('cl1', 'Arsenal', 'mgr1', 3, 'st1', 5);
+INSERT INTO clubs(club_id, club_name, manager_id, pl_titles, stadium_id, rank) VALUES ('cl2', 'Chelsea', 'mgr2', 5, 'st2', 3);
+INSERT INTO clubs(club_id, club_name, manager_id, pl_titles, stadium_id, rank) VALUES ('cl3', 'Manchester United', 'mgr3', 13, 'st3', 6);
 
 -- MANAGERS
 INSERT INTO managers(manager_id, manager_name, nationality, club_id, season_id) VALUES ('mgr1', 'Unai Emery', 'Spanish', 'cl1', 's18');
@@ -225,7 +228,7 @@ INSERT INTO stadiums(stadium_id, stadium_name, capacity, location, built, pitch_
 
 -- PHONE
 INSERT INTO phone(phone_id, phone_number, stadium_id) VALUES (101, 02076195003, 'st1');
-INSERT INTO phone(phone_id, phone_number, stadium_id) VALUES (102, 03718111955, 'st1');
+INSERT INTO phone(phone_id, phone_number, stadium_id) VALUES (102, 03718111955, 'st2');
 INSERT INTO phone(phone_id, phone_number, stadium_id) VALUES (103, 01618688000, 'st3');
 
 -- TEAM STATS

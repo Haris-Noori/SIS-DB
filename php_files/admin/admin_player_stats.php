@@ -36,7 +36,7 @@
                 $result .= " <thead class='thead_clubs'> <tr> 
                     <th>player id</th> 
                     <th>club id</th> 
-                    <th>goals scored</th> 
+                    <th>⚽️goals scored️</th> 
                     <th>assists</th> 
                     <th> Action </th>
                     </tr> </thead> ";
@@ -47,7 +47,7 @@
                     
                         <td> ".$row['player_id']." </td>
                         <td> ".$row['club_id']." </td>
-                        <td> ".$row['goals_scored']." </td>
+                        <td> ️".$row['goals_scored']." </td>
                         <td> ".$row['assists']." </td>
                         <td> <a href='edit_player_stats.php?edit=".$row['player_id']."'><button class='btn btn-info btn-block'>edit</button></a> </td>
 
@@ -82,7 +82,7 @@
                 $result .= " <thead class='thead_clubs'> <tr> 
                     <th>player id</th> 
                     <th>club id</th> 
-                    <th>clean sheets</th>  
+                    <th>👐clean sheets</th>  
                     <th> Action </th>
                     </tr> </thead> ";
 

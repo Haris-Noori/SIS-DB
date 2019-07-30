@@ -40,7 +40,7 @@
 
                 $result .= " <thead class='thead_clubs'> <tr> 
                     <th>stadium id</th> 
-                    <th>stadium name</th>  
+                    <th>🏟 stadium name</th>  
                     <th>capacity</th> 
                     <th>location</th> 
                     <th>Built</th>
@@ -59,6 +59,50 @@
                         <td> ".$row['built']." </td>
                         <td> ".$row['pitch_size']." </td>
                         <td> <a href='edit_stadium.php?edit=".$row['stadium_id']."'><button class='btn btn-info btn-block'>edit</button></a> </td>
+
+                    </tr> </tbody> ";
+                }
+
+                $result .= " </table> </div> ";
+            }
+
+            echo $result;
+
+        ?>
+    </div>
+    </center>
+
+    <!-- PHONE TABLE -->
+    <br>
+    <center>
+    <h3>Phone Numbers</h3>
+    <div class="container">
+        <?php
+
+            $qry = " SELECT * FROM phone ";
+            $res = $con->query($qry);
+            $result = "";
+
+            if($res->num_rows > 0)
+            {   
+                $result .= " <div class = 'container'> ";
+                $result .= " <table class='table table-bordered'> ";
+
+                $result .= " <thead class='thead_clubs'> <tr> 
+                    <th>phone id</th> 
+                    <th>phone number</th>  
+                    <th>stadium_id</th> 
+                    <th> Action </th>
+                    </tr> </thead> ";
+
+                while($row = $res->fetch_assoc())
+                {
+                    $result .= " <tbody> <tr>
+                    
+                        <td> ".$row['phone_id']." </td>
+                        <td> 0".$row['phone_number']." </td>
+                        <td> ".$row['stadium_id']." </td>
+                        <td> <a href='edit_phone.php?edit=".$row['phone_id']."'><button class='btn btn-info btn-block'>edit</button></a> </td>
 
                     </tr> </tbody> ";
                 }

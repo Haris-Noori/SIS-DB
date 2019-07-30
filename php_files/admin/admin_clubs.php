@@ -36,9 +36,9 @@
                 $result .= " <table class='table table-bordered'> ";
 
                 $result .= " <thead class='thead_clubs'> <tr> 
-                    <th>club id</th> <th>club name</th> 
-                    <th>manager id</th> <th>PL titles</th> 
-                    <th>stadium id</th> <th>rank</th> 
+                    <th>club id</th> <th>🚩club name</th> 
+                    <th>manager id</th> <th>🏆PL titles</th> 
+                    <th>🏟stadium id</th> <th>rank</th> 
                     <th> Action </th>
                     </tr> </thead> ";
 
