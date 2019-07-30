@@ -93,7 +93,7 @@
                         <td> ".$row['player_id']." </td>
                         <td> ".$row['club_id']." </td>
                         <td> ".$row['c_sheets']." </td>
-                        <td> <a href='edit_player_stats.php?edit=".$row['player_id']."'><button class='btn btn-info btn-block'>edit</button></a> </td>
+                        <td> <a href='edit_keepers.php?edit=".$row['player_id']."'><button class='btn btn-info btn-block'>edit</button></a> </td>
 
                     </tr> </tbody> ";
                 }
