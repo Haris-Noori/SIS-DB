@@ -195,9 +195,9 @@ INSERT INTO admins(admin_id, username, password) VALUES (2, 'ali', 'javed');
 INSERT INTO admins(admin_id, username, password) VALUES (3, 'bilal', 'amjad');
 
 -- CLUBS
-INSERT INTO clubs(club_id, club_name, manager_id, pl_titles, stadium_id, rank) VALUES ('cl1', 'Arsenal', 'mgr1', 3, 'std1', 5);
-INSERT INTO clubs(club_id, club_name, manager_id, pl_titles, stadium_id, rank) VALUES ('cl2', 'Chelsea', 'mgr2', 5, 'std2', 3);
-INSERT INTO clubs(club_id, club_name, manager_id, pl_titles, stadium_id, rank) VALUES ('cl3', 'Manchester United', 'mgr3', 13, 'std3', 6);
+INSERT INTO clubs(club_id, club_name, manager_id, pl_titles, stadium_id, rank) VALUES ('cl1', 'Arsenal', 'mgr1', 3, 'st1', 5);
+INSERT INTO clubs(club_id, club_name, manager_id, pl_titles, stadium_id, rank) VALUES ('cl2', 'Chelsea', 'mgr2', 5, 'st2', 3);
+INSERT INTO clubs(club_id, club_name, manager_id, pl_titles, stadium_id, rank) VALUES ('cl3', 'Manchester United', 'mgr3', 13, 'st3', 6);
 
 -- MANAGERS
 INSERT INTO managers(manager_id, manager_name, nationality, club_id, season_id) VALUES ('mgr1', 'Unai Emery', 'Spanish', 'cl1', 's18');
